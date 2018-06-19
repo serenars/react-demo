@@ -4,20 +4,16 @@ import {
   connect,
 } from 'react-redux'
 
-import Home from './components/Home';
-import Product from './components/Product';
-import About from './components/About';
-import Uploading from './components/upload';
+import Home from './components/home';
+import Login from './components/login';
 
 class App extends Component {
     render() {
         return (
           <HashRouter>
-            <div style={{height: '100%'}}>
+            <div className="app-router">
+             <Route path="/" component={Login}/>
               <Route path="/home" component={Home}/>
-              <Route path="/abc1" component={Product}/>
-              <Route path="/" component={About}/>
-              <Route path="/Uploading" component={Uploading}/>
             </div>
           </HashRouter>
         );
