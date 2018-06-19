@@ -13,7 +13,7 @@ class App extends Component {
     render() {
         return (
           <HashRouter>
-            <div>
+            <div style={{height: '100%'}}>
               <Route path="/home" component={Home}/>
               <Route path="/abc1" component={Product}/>
               <Route path="/" component={About}/>

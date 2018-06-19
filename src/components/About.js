@@ -5,6 +5,7 @@ import conf from '../conf'
 import {
     _fetch,
 } from '../fetch'
+import './myCss.less'
 
 const FormItem = Form.Item;
 
