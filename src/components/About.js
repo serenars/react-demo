@@ -76,7 +76,6 @@ class About extends React.Component {
                     </Form>
                 </div>
             </div>
-
         );
     }
 }
