@@ -4,7 +4,7 @@ import {
     is_uri_param,
 } from './url'
 import conf from '../conf.js'
-// import toast from '../../component/toast/normal'
+import Message from 'framework_src/component/message'
 
 const TIMEOUT_SEC = 10 * 1000
 // export const build_timeout_fetch = () => {
@@ -107,7 +107,7 @@ export const _fetch = async ({
                 _fetch_error: true,
             })
 
-            // toast('网络连接超时，请重试。')
+            Message.error('网络连接超时，请重试。')
             error_flow && error_flow()
 
             timeouted = true
@@ -172,7 +172,7 @@ export const _fetch = async ({
         if(error) {
             error(rv)
         } else {
-            // toast(rv.message ? rv.message : '请求数据异常，请稍后再试。')
+            Message.error(rv.message ? rv.message : '请求数据异常，请稍后再试。')
             error_flow && error_flow(rv)
         }
     }

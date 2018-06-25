@@ -1,23 +1,4 @@
-import {BrowserRouter} from 'react-router-dom';
-const pathTo = ()=>{
-    function myComponent (path,com){
-        <Route path = {pathTo} component = {com}>
-    }
-    switch (isGridLevel){
-        case:'yes':
-            return myComponent ('/undispatchenbikes',com1);
-        case 'no':
-            return myComponent ('/dispatchenbikes',com2);
-        default:
-            return myComponent ('/repiringBikes',com3);    
-    }
-}
-<BrowserRouter>
-    pathTo()
-</BrowserRouter>
 
-
-登录写法
 
 //后台管理系统
 博客地址
@@ -25,3 +6,8 @@ https://yezihaohao.github.io/2017/05/09/React-AntD%E5%90%8E%E5%8F%B0%E7%AE%A1%E7
 
 github
 https://github.com/yezihaohao/react-admin
+
+https://cloud.tencent.com/developer/article/1078192
+
+// 导入
+https://cloud.tencent.com/developer/article/1078192

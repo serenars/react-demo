@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
 
-import Home from './components/reducer.js'
+import Home from './module/reducer.js'
 
 const app_reducer = combineReducers({
     Home,

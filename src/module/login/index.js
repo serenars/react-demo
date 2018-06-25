@@ -12,7 +12,7 @@ const FormItem = Form.Item;
 // const HOST = 'https://rest.wondershare.cn'
 const PATH = '/orgs/positions'
 
-class About extends React.Component {
+class Login extends React.Component {
     constructor(prop) {
         super(prop)
         this.state = {
@@ -21,10 +21,10 @@ class About extends React.Component {
     }
 
     componentDidMount() {
-        this.fetch_weather()
+        this.handle_login()
     }
 
-    fetch_weather() {
+    handle_login() {
         _fetch({
             fetch_type: 'GET',
             path: PATH,
@@ -71,7 +71,6 @@ class About extends React.Component {
                             </Button>
                             <p style={{display: 'flex', justifyContent: 'flex-end'}}>
                                 <a href="">注册!</a>
-                                {/* <a><Icon type="github" />(第三方登录)</a> */}
                             </p>
                         </FormItem>
                     </Form>
@@ -81,4 +80,4 @@ class About extends React.Component {
     }
 }
 
-export default About;
+export default Login;

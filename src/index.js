@@ -5,12 +5,12 @@ import {
 } from 'react-redux'
 import configureStore from './store'
 import './index.less';
-import App from './App';
+import Root from './router';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <App />
+        <Root />
     </Provider>,
     document.getElementById('root')
 );
